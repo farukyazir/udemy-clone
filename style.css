@@ -1,0 +1,106 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+      font-family: "Gabarito", sans-serif;;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: solid black 1px;
+    align-items: center;
+
+}
+.navbar__s1{
+    color: #6a14eb
+}
+.navbar__s2{
+    border: solid black 1px;
+    border-radius: 30px;
+    padding: 10px;
+    width: 60%;
+    align-items: center;
+}
+.navbar__s2 input{
+    border: none;
+    width: 500px;
+    font-size: 16px;
+}
+.navbar__s2 input:focus{
+    outline: none;
+}
+.navbar__s3{
+    display: flex;
+    gap: 10px;
+}
+
+.department{
+    display: flex;
+    padding: 10px;
+    border: solid black 1px;
+    justify-content: space-between;
+}
+.department p{
+    background-color: #6a14eb;
+    padding: 10px;
+    border-radius: 20px;
+}
+.saleimage{
+    position: relative;
+}
+.saleimage img{
+    width: 100%;
+}
+.saleimage__offer{
+    padding: 2%;
+    border: solid black 1px;
+    width: 34%;
+    position: absolute;
+    top: 40px;
+    left: 100px;
+
+}
+.recommended{
+    padding: 10px;
+    
+}
+.recommended__courses{
+    display: flex;
+    justify-content: space-between;  
+    gap: 10px;
+    flex-wrap: wrap;
+    flex: 20%;
+     
+}
+.recommended p{
+    padding-bottom: 5px;
+}
+.topicsrecommended{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5px 20px;
+}
+.topics{
+    padding: 10px;
+    border: solid black 1px;
+    box-sizing: border-box;
+    width: 150px;
+    min-width: 100px;
+    flex: 20%;  
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.popular{
+    padding:10px;
+}
+.popular__courses{
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+    flex-wrap: wrap;
+    flex:20%;
+}
