@@ -11,6 +11,10 @@ body{
     padding: 10px;
     border-bottom: solid black 1px;
     align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    background-color: white;
 
 }
 .navbar__s1{
@@ -34,18 +38,40 @@ body{
 .navbar__s3{
     display: flex;
     gap: 10px;
+    align-items: center;
 }
+.mylearning{
+    position: relative;
+    cursor: pointer;
+}
+.mylearning__popup{
+    display: none;
+    position: absolute;
+    border: solid black 1px;
+    background-color: white;
+    width: 100px;
+    top: 35px;
+    left: 10%;
+}
+.mylearning:hover .mylearning__popup{
+    display: block;
 
+}
 .department{
     display: flex;
     padding: 10px;
-    border: solid black 1px;
     justify-content: space-between;
 }
 .department p{
     background-color: #6a14eb;
     padding: 10px;
     border-radius: 20px;
+    border: solid #6a14eb 1px;
+}
+.department p:hover{
+    transition: 1s;
+    background-color: white;
+    color: black;
 }
 .saleimage{
     position: relative;
@@ -60,7 +86,20 @@ body{
     position: absolute;
     top: 40px;
     left: 100px;
-
+    animation-name: zoom;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+@keyframes zoom{
+    0%{
+opacity: 0;
+transform: scale(0);
+    }
+    100%{
+opacity: 1;
+transform: scale(1);
+    }
 }
 .recommended{
     padding: 10px;
@@ -103,4 +142,21 @@ body{
     gap:10px;
     flex-wrap: wrap;
     flex:20%;
+}
+.footer{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+.footer__one{
+    display: flex;
+    gap: 10px;
+}
+.footer__one p{
+    margin: 20px;
+}
+.footer__two{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
 }
